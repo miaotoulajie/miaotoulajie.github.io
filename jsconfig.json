@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    /**
+     * 以下配置是为了更好的开发体验
+     */
+    "allowJs": true, // 允许编译 JavaScript 文件
+    "checkJs": false, // 不检查 JavaScript 文件的类型（设为 true 可对 JS 也进行类型检查）
+    "jsx": "preserve", // 如果你会用 JSX
+    "strict": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*", // 包含 src 目录下所有文件
+    "src/**/*.vue", // 包含 Vue 文件
+    "types/**/*.d.ts" // 如果有类型声明文件
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.js"
+  ]
+}
