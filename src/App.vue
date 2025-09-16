@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <h1>你好，世界！</h1>
-    <p>这是我的 GitHub Pages 网站。</p>
+    <!-- 路由出口，页面内容将在这里渲染 -->
+    <main class="main-content">
+      <router-view />
+    </main>
   </div>
 </template>
 
