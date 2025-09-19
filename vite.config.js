@@ -8,6 +8,6 @@ export default defineConfig({
     alias: {
       "@": resolve(__dirname, "src"), // 设置 @ 指向 src 目录
     },
-    base: process.env.NODE_ENV === "production" ? "/.github.io/" : "/",
+    base: process.env.NODE_ENV === "production" ? "/" : "/",
   },
 });
