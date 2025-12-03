@@ -9,7 +9,10 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  mounted() {
+    console.log('Home mounted:', 'depoly test');
+  }
 }
 </script>
 
