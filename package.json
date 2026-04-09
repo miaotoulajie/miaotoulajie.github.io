@@ -10,7 +10,10 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "prebuild": "node scripts/check-env.js"
+    "check:env": "node scripts/check-env.js",
+    "validate:content": "node scripts/validate-content.js",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "prebuild": "npm run check:env && npm run validate:content && npm run generate:sitemap"
   },
   "repository": {
     "type": "git",
